@@ -20,6 +20,12 @@ export default function Navbar() {
 					>
 						<FaGithub />
 					</Link>
+					<Link
+						className="text-white/90 hover:text-white"
+						href="https://twitter.com/"
+					>
+						<FaTwitter />
+					</Link>
 				</div>
 			</div>
 		</nav>

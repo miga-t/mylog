@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import markdownit from "markdown-it";
 const inter = Inter({ subsets: ["latin"] });
+import Posts from "@/app/components/Posts";
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 					I&apos;m <span className="font-bold">John</span>.
 				</span>
 			</p>
+			<Posts />
 		</main>
 	);
 }
