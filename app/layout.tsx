@@ -1,10 +1,15 @@
 import Navbar from "@/app/components/Navbar";
 import "./globals.css";
 import MyProfilePic from "@/app/components/MyProfilePic";
+import Head from "next/head";
+import type { Metadata } from "next";
 
-export const metadata = {
-	title: "Weblog",
-	description: "Weblog"
+export const metadata: Metadata = {
+	title: { default: "Weblog", template: "%s | Weblog" },
+	description: "Weblog",
+	icons: {
+		icon: "/favicon.png"
+	}
 };
 
 export default function RootLayout({

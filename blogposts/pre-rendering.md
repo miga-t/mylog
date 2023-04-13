@@ -1,11 +1,40 @@
 ---
-title: "Two Forms of Pre-rendering"
+title: "Sample Markdown"
 date: "2023-03-14"
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+# Sample Markdown
 
--   **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
--   **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+This is some basic, sample markdown.
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+## Second Heading
+
+-   Unordered lists, and:
+
+1. One
+1. Two
+1. Three
+
+-   More
+
+> Blockquote
+
+And **bold**, _italics_, and even \*italics and later **bold\***. Even ~~strikethrough~~. [A link](https://markdowntohtml.com) to somewhere.
+
+And code highlighting:
+
+```js
+var foo = "bar";
+
+function baz(s) {
+	return foo + ":" + s;
+}
+```
+
+Or inline code like `var foo = 'bar';`.
+
+Or an image of bears
+
+![bears](http://placebear.com/200/200)
+
+The end ...

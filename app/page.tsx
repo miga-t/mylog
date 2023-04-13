@@ -5,6 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 import Posts from "@/app/components/Posts";
 import Link from "next/link";
 import TechStacks from "./components/TechStacks";
+import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
 	return (
@@ -23,21 +24,38 @@ export default function Home() {
 					</li>
 				</ul>
 			</section>
-			<section className="border-b-2 border-gray-900 p-3 m-3 ">
-				<h2 className="mt-6 mb-6 text-2xl">Products / Portfolio</h2>
+			<section className="border-b-2 border-gray-900 p-1 m-3 ">
+				<h2 className="mt-6 mb-6 text-2xl">個人開発 </h2>
 				<ul>
 					<li className="border-dashed border-b-2 border-gray-900 mt-3">
-						<Link
-							className="underline text-3xl text-red-600 hover:text-red-400 animate-pulse mt-3"
-							href={`https://freebox.vercel.app/`}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							FreeBox
-						</Link>
+						<div className="flex flex-row items-end gap-4">
+							<div className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500  p-2 rounded-md">
+								<Link
+									className="underline text-3xl text-green-400 hover:text-green-300 "
+									href={`https://freebox.vercel.app/`}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									FreeBox
+								</Link>
+							</div>
+							<Link
+								className="hover:text-purple-400"
+								href="https://github.com/miga-t/freebox"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<div className="flex flex-row items-center gap-1">
+									<FaGithub />
+									GitHubで見る
+								</div>
+							</Link>
+						</div>
 						<p>
 							著作権保護期間が終了した作品や自由に配布が許可された映像作品が見られます。
-							<br />* Loginする場合は、email: test,password: test
+							<br />* Loginする場合は、email:
+							<strong>test</strong>,password:
+							<strong>test</strong>
 							で入力してください。
 						</p>
 
@@ -52,17 +70,33 @@ export default function Home() {
 						></Image>
 					</li>
 					<li className="mt-3">
-						<Link
-							className="underline text-3xl text-red-600 hover:text-red-400 animate-pulse"
-							href={`https://tweetbox.vercel.app/`}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							TweetBox
-						</Link>
+						<div className="flex flex-row items-end gap-4">
+							<Link
+								className="underline text-3xl text-red-600 hover:text-red-400 animate-pulse"
+								href={`https://tweetbox.vercel.app/`}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								TweetBox
+							</Link>
+							<Link
+								className="hover:text-purple-400"
+								href="https://github.com/miga-t/tweetbox"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<div className="flex flex-row items-center gap-1">
+									<FaGithub />
+									GitHubで見る
+								</div>
+							</Link>
+						</div>
+
 						<p>
 							Twitterのクローンアプリです。
-							<br />* Loginする場合は、email: test,password: test
+							<br />* Loginする場合は、email:{" "}
+							<strong>test@email.com</strong>
+							,password: <strong>test</strong>{" "}
 							で入力してください。
 						</p>
 						<TechStacks />
