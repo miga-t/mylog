@@ -29,7 +29,7 @@ export default function Home() {
 				<ul>
 					<li className="border-dashed border-b-2 border-gray-900 mt-3">
 						<div className="flex flex-row items-end gap-4">
-							<div className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500  p-2 rounded-md">
+							<div className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500   transition p-2 rounded-md">
 								<Link
 									className="underline text-3xl text-green-400 hover:text-green-300 "
 									href={`https://freebox.vercel.app/`}
