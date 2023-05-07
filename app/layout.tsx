@@ -5,10 +5,10 @@ import Head from "next/head";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: { default: "Weblog", template: "%s | Weblog" },
-	description: "Weblog",
+	title: { default: "Blog13", template: "%s | Blog13" },
+	description: "Blog13",
 	icons: {
-		icon: "/favicon.png"
+		icon: "./favicon.png"
 	}
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className="bg-[#F5F5F2] ">
+			<body className="bg-[#fffffc] ">
 				<Navbar />
 				{children}
 			</body>

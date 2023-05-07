@@ -13,23 +13,17 @@ export default function Home() {
 			<section className="border-b-2 border-gray-900 p-2 m-3">
 				<h2 className="mt-6 mb-6 text-2xl">経歴</h2>
 				<ul className="pl-0">
-					<li className="list-none">
-						<Image
-							className="inline ml-2"
-							src="/images/Career.png"
-							width={430}
-							height={26}
-							alt="No image"
-						></Image>
-					</li>
+					<li className="list-none">2018年4月~2023年3月 神戸大学</li>
+					<li className="list-none">2023年5月~ 株式会社····</li>
 				</ul>
 			</section>
+			<Posts />
 			<section className="border-b-2 border-gray-900 p-1 m-3 ">
 				<h2 className="mt-6 mb-6 text-2xl">個人開発 </h2>
 				<ul>
 					<li className="border-dashed border-b-2 border-gray-900 mt-3">
 						<div className="flex flex-row items-end gap-4">
-							<div className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500   transition p-2 rounded-md">
+							<div className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 hover:from-fuchsia-500 hover:via-indigo-500  hover:to-rose-400  transition p-2 rounded-md">
 								<Link
 									className="underline text-3xl text-green-400 hover:text-green-300 "
 									href={`https://freebox.vercel.app/`}
@@ -154,7 +148,6 @@ export default function Home() {
 					</li>
 				</ul>
 			</section>
-			<Posts />
 		</main>
 	);
 }
