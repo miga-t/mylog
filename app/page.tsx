@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<main className="px-6 mx-auto prose">
 			<section className="border-b-2 border-gray-900 p-2 m-3">
-				<h2 className="mt-6 mb-6 text-2xl">経歴</h2>
+				<h2 className="mt-6 mb-6 text-3xl">経歴</h2>
 				<ul className="pl-0">
 					<li className="list-none">2018年4月~2023年3月 神戸大学</li>
 					<li className="list-none">2023年5月~ 株式会社····</li>

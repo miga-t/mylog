@@ -1,5 +1,5 @@
 ---
-title: "Sample Markdown"
+title: "Markdown Syntax"
 date: "2023-03-14"
 ---
 
@@ -10,12 +10,12 @@ This is some basic, sample markdown.
 ## Second Heading
 
 -   Unordered lists, and:
+-   Statement1
+-   Statement2
 
 1. One
-1. Two
-1. Three
-
--   More
+2. Two
+3. Three
 
 > Blockquote
 
@@ -36,5 +36,7 @@ Or inline code like `var foo = 'bar';`.
 Or an image of bears
 
 ![bears](http://placebear.com/200/200)
+
+[A link](https://markdowntohtml.com)
 
 The end ...
